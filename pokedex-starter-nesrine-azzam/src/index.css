@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+  font-family: 'Press Start 2P', cursive;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #222;
+  background-color: #a8e6ff; /* Bleu clair style Pokémon */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #a8e6ff 0%, #70c1ff 100%);
+}
+
+/* Liens style Pokémon */
+a {
+  font-weight: 500;
+  color: #ffcb05; /* Jaune Pikachu */
+  text-decoration: none;
+}
+a:hover {
+  color: #ff5733; /* Rouge feu */
+}
+
+/* Titres façon Pokémon */
+h1 {
+  font-size: 2.5rem;
+  color: #ff5733;
+  text-shadow: 3px 3px 0px #222;
+  text-align: center;
+}
+
+/* Boutons façon Pokémon */
+button {
+  font-family: 'Press Start 2P', cursive;
+  border: 4px solid #222;
+  background-color: #ffcb05;
+  color: #222;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 4px 4px 0px #222;
+}
+
+button:hover {
+  background-color: #ff5733;
+  color: #fff;
+  box-shadow: none;
+  transform: translate(4px, 4px);
+}
+
+/* Carte Pokémon */
+.pokemon-card {
+  background: white;
+  border: 4px solid #222;
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 5px 5px 0px #222;
+  margin: 20px;
+}
+
+.pokemon-name {
+  font-size: 1.2rem;
+  color: #ff5733;
+}
+
+.pokemon-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.pokemon-stats-container {
+  font-size: 0.9rem;
+  background: #ffcb05;
+  padding: 8px;
+  border-radius: 8px;
+  border: 2px solid #222;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  button {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+
+  .pokemon-card {
+    width: 200px;
+    padding: 15px;
+  }
+}
