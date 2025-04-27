@@ -38,6 +38,7 @@ Il permet de gérer une liste de Pokémon via une API et de les afficher côté 
 cd pokedex-api-nesrine-azzam
 npm install
 npm run dev
+```
 L'application est accessible sur http://localhost:5173 (ou autre port selon Vite).
 
 📖 Documentation rapide de l'API
