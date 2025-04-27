@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+  font-family: 'Press Start 2P', cursive;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #222;
+  background-color: #a8e6ff; /* Bleu clair style Pokémon */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #a8e6ff 0%, #70c1ff 100%);
+}
+
+/* Liens style Pokémon */
+a {
+  font-weight: 500;
+  color: #ffcb05; /* Jaune Pikachu */
+  text-decoration: none;
+}
+a:hover {
+  color: #ff5733; /* Rouge feu */
+}
+
+/* Titres façon Pokémon */
+h1 {
+  font-size: 2.5rem;
+  color: #ff5733;
+  text-shadow: 3px 3px 0px #222;
+  text-align: center;
+}
+
+/* Boutons façon Pokémon */
+button {
+  font-family: 'Press Start 2P', cursive;
+  border: 4px solid #222;
+  background-color: #ffcb05;
+  color: #222;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 4px 4px 0px #222;
+}
+
+button:hover {
+  background-color: #ff5733;
+  color: #fff;
+  box-shadow: none;
+  transform: translate(4px, 4px);
+}
+
+/* Conteneur des cartes Pokémon */
+.pokemon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+/* Carte Pokémon */
+.pokemon-card {
+  background: white;
+  border: 4px solid #222;
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 5px 5px 0px #222;
+  margin: 20px;
+}
+
+.pokemon-name {
+  font-size: 1.2rem;
+  color: #ff5733;
+  text-shadow: 2px 2px 0px #222;
+}
+
+.pokemon-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Conteneur des stats */
+.pokemon-stats-container {
+  font-size: 0.9rem;
+  background: #ffcb05;
+  padding: 8px;
+  border-radius: 8px;
+  border: 2px solid #222;
+  margin-top: 10px;
+}
+
+.pokemon-stats-container p {
+  margin: 5px 0;
+}
+
+/* Barre de recherche */
+.search-bar {
+  width: 50%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ff5733;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.search-bar:focus {
+  border-color: #ff5733;
+}
+
+/* Sélecteur de filtre */
+.filter-select {
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ff5733;
+  border-radius: 5px;
+  outline: none;
+  width: 220px;
+  background-color: white;
+  color: #ff5733;
+}
+
+.filter-select:focus {
+  border-color: #ff5733;
+}
+
+/* —————————————————  Édition de la carte ———————————————— */
+.edit-card {
+  width: 240px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.edit-card .pokemon-image-container {
+  margin-bottom: 15px;
+}
+
+.edit-card .url-input {
+  width: 90%;
+  margin-top: 6px;
+  padding: 8px;
+  font-size: 0.9rem;
+  border: 2px solid #ff5733;
+  border-radius: 5px;
+}
+
+.save-btn {
+  margin-top: 20px;
+  width: 80%;
+  background: #ff5733;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.save-btn:hover { 
+  background: #d32f2f; 
+}
+
+/* Section d'ajout de type */
+.add-type-row {
+  width: 90%;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.add-type-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Type chip */
+.type-chip {
+  display: inline-block;
+  background: #ff5733; /* Rouge feu */
+  color: #fff;
+  font-size: 12px;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.type-chip:hover {
+  background: #d32f2f;
+}
+
+/* Ligne de stat */
+.stat-row {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+}
+
+.stat-row input {
+  width: 70px;
+  margin-left: auto;
+  padding: 4px;
+  border-radius: 4px;
+}
