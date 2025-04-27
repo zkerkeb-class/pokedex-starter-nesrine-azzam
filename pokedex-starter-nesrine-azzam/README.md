@@ -39,17 +39,17 @@ cd pokedex-api-nesrine-azzam
 npm install
 npm run dev
 ```
-L'application est accessible sur http://localhost:5173 (ou autre port selon Vite).
+L'application est accessible sur http://localhost:5173.
 
 📖 Documentation rapide de l'API
 
 Méthode	URL	Description
-GET	/api/pokemons	Récupérer tous les Pokémon
-GET	/api/pokemons/:id	Récupérer un Pokémon par ID
-POST	/api/pokemons	Créer un nouveau Pokémon
-PUT	/api/pokemons/:id	Modifier un Pokémon existant
-DELETE	/api/pokemons/:id	Supprimer un Pokémon
-⚡ Toutes les routes POST/PUT/DELETE sont protégées par authentification.
+- GET	/api/pokemons	Récupérer tous les Pokémon
+- GET	/api/pokemons/:id	Récupérer un Pokémon par ID
+- POST	/api/pokemons	Créer un nouveau Pokémon
+- PUT	/api/pokemons/:id	Modifier un Pokémon existant
+- DELETE	/api/pokemons/:id	Supprimer un Pokémon
+- ⚡ Toutes les routes POST/PUT/DELETE sont protégées par authentification.
 
 🎥 Démo Vidéo
 Lien vers la vidéo YouTube ➔ (à https://www.youtube.com/watch?v=5Qv6rkNaNSY )
