@@ -32,7 +32,7 @@ Il permet de gérer une liste de Pokémon via une API et de les afficher côté 
 
 ## 🚀 Comment lancer le projet
 
-### 1. Backend (API Pokémon)
+### Backend (API Pokémon)
 
 ```bash
 cd pokedex-api-nesrine-azzam
